@@ -1,0 +1,64 @@
+body {
+    background-color: cornsilk;
+    margin: 0;
+    padding: 20px;
+}
+
+.heading {
+    border: 2px solid rgba(72, 172, 76, 251);
+    background-color: rgba(74, 174, 78, 253);
+    margin-bottom: 7%;
+    padding: 5px 90px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-card {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.logout-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-form input[type="submit"] {
+    background-color: #4AAE4E;
+    color: #4AAE4E;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+button {
+    background-color: rgb(54, 157, 63);
+    padding: 0.23em 2%;
+    color: white;
+    font-size: 1em;
+    border: none;
+    transition: border 1ms;
+    cursor: pointer;
+}

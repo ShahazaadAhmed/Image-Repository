@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<!--
+#########################################################################################################    
+author: Satya Sreekar Pattaswami
+last change:
+            Adjusted the header to be same with the other pages
+
+            made changes to the redirections as to accomodate for the implementation of the directories.
+            In this page only the button to index page has been changed 
+last cahnge date: 29 February 2023
+email: satyasreekarpattaswami@gmail.com
+description: this is a pure html file. This is page shows the team members of the IIOR team and the KLH
+            Dev Team in two parts. For further details refer to the documentation section 4.6.1.
+            Layout Source: codepen.io  
+#########################################################################################################
+-->
+<head>
+    <title>
+        Team
+    </title>
+    <style>
+        /* Globals */
+
+
+        body {
+            font-family: "Inter", sans-serif;
+            max-width: 75rem;
+            padding: 2rem 1.5rem;
+            margin: 0 auto;
+            color: #241623;
+            background: cornsilk;
+        }
+
+        header h1,h1 {
+            font-size: 1.5em;
+            color: black;
+            -webkit-text-stroke: 1px black;
+            -webkit-text-fill-color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 0.5em;
+            margin-bottom: 0.67em;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid rgba(72, 172, 76, 251);
+            background-color: rgba(74, 174, 78, 253);
+            margin-top: 0;
+            padding: 0.33em 9%;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        button {
+            background-color: rgb(54, 157, 63);
+            padding: 0.23em 2%;
+            color: white;
+            font-size: 1em;
+            border: none;
+            transition: border 1ms;
+        }
+
+        button:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        button:active {
+            opacity: 0.5;
+        }
+
+        ul {
+            list-style-type: none;
+
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 2.7rem;
+            max-width: 20ch;
+        }
+
+        p {
+            max-width: 60ch;
+        }
+
+        a {
+            color: currentcolor;
+        }
+
+        /* Utilities */
+        .auto-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,
+                    minmax(var(--auto-grid-min-size, 14rem), 1fr));
+            grid-gap: var(--auto-grid-gap, 0);
+            padding: 0;
+        }
+
+        .flow>*+* {
+            margin-top: var(--flow-space, 1em);
+        }
+
+        /* Composition */
+        .team {
+            --flow-space: 2em;
+        }
+
+        /* Blocks */
+        .profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            aspect-ratio: 1/1;
+            position: relative;
+            padding: 1.5rem;
+            color: #ffffff;
+            backface-visibility: hidden;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .profile::before,
+        .profile::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            /*inset: 0;*/
+            top: 0;
+            left: 0;
+        }
+
+        .profile::before {
+            background: linear-gradient(to top,
+                    hsl(0 0% 0% / 0.79) 0%,
+                    hsl(0 0% 0% / 0.787) 7.8%,
+                    hsl(0 0% 0% / 0.779) 14.4%,
+                    hsl(0 0% 0% / 0.765) 20.2%,
+                    hsl(0 0% 0% / 0.744) 25.3%,
+                    hsl(0 0% 0% / 0.717) 29.9%,
+                    hsl(0 0% 0% / 0.683) 34.3%,
+                    hsl(0 0% 0% / 0.641) 38.7%,
+                    hsl(0 0% 0% / 0.592) 43.3%,
+                    hsl(0 0% 0% / 0.534) 48.4%,
+                    hsl(0 0% 0% / 0.468) 54.1%,
+                    hsl(0 0% 0% / 0.393) 60.6%,
+                    hsl(0 0% 0% / 0.31) 68.3%,
+                    hsl(0 0% 0% / 0.216) 77.3%,
+                    hsl(0 0% 0% / 0.113) 87.7%,
+                    hsl(0 0% 0% / 0) 100%);
+            transition: 300ms opacity linear;
+        }
+
+        .profile::after {
+            background: linear-gradient(45deg,
+                    hsl(5 97% 63% / 0.7) 0,
+                    hsl(5 97% 63% / 0) 100%);
+            opacity: 0;
+            transition: 300ms opacity linear;
+        }
+
+        .profile>* {
+            z-index: 1;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            z-index: -1;
+            object-fit: cover;
+            filter: grayscale(1);
+            transition: filter 200ms ease, transform 250ms linear;
+        }
+
+        .profile h2,
+        .profile p {
+            transform: translateY(2ex);
+        }
+
+        .profile h2 {
+            font-size: 1.2rem;
+            line-height: 1.2;
+            font-weight: 900;
+            letter-spacing: 0.03ch;
+            transition: 300ms transform ease;
+        }
+
+        .profile p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .profile p {
+            opacity: 0;
+            transition: 300ms opacity linear, 300ms transform ease-in-out;
+        }
+
+        .profile:focus {
+            outline: 0.5rem solid white;
+            outline-offset: -0.5rem;
+        }
+
+        .profile:hover :is(h2, p),
+        .profile:focus :is(h2, p) {
+            transform: none;
+        }
+
+        .profile:hover::after,
+        .profile:focus::after,
+        .profile:hover::before,
+        .profile:focus::before {
+            opacity: 0.7;
+        }
+
+        .profile:hover p,
+        .profile:focus p {
+            opacity: 1;
+            transition-delay: 200ms;
+        }
+
+        .profile:hover img,
+        .profile:focus img {
+            filter: grayscale(0);
+            transform: scale(1.05) rotate(1deg);
+        }
+    </style>
+</head>
+<header>
+    <button onclick="window.location.href = '../index.php';">Home</button>
+    <center>
+        <h1>Team</h1>
+    </center>
+    <div></div>
+</header>
+<body>
+    <article class="flow">
+        <div class="team">
+            <center>
+                <h1>IIOR Team</h1>
+            </center>
+            <div class="wd">
+                <ul class="auto-grid" role="list">
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">Dr.Ch.Sarada</h2>
+                            <p>Principal Scientist(Ag. Statistics)</p>
+                            <img alt="Ch. Sarada" src="sarada.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">Dr.R.D.Prasad</h2>
+                            <p>Principal Scientist(Plant Pathology)</p>
+                            <img alt="R. D. Prasad" src="1.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">Dr.M.Santha Lakshmi Prasad</h2>
+                            <p>Principal Scientist(Plant Pathology)</p>
+                            <img alt="M. Santha Lakshmi Prasad" src="2.jpg" />
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">Dr.K.Sakthivel</h2>
+                            <p>Scientist(Plant Pathology)</p>
+                            <img alt="K. Sakthivel" src="3.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">Dr.P.S.Srinivas</h2>
+                            <p>Principal Scientist(Ag.Entomology)</p>
+                            <img alt="P.S.Srinivas" src="4.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">Dr.P.Duraimurugan</h2>
+                            <p>Principal Scientist(Ag. Entomology)</p>
+                            <img alt="P. Duraimurugan" src="5.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">T. Boopathi</h2>
+                            <p>Senior Scientist(Ag. Entomology)</p>
+                            <img alt="T. Boopathi" src="6.jpg" />
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <center>
+                    <H1 id="sree">Development Team</H1>
+                </center>
+                <ul class="auto-grid" role="list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/satya-sreekar-pattaswami-093a2220a/" target=_blank
+                            class="profile">
+                            <h2 class="profile__name">Satya Sreekar Pattaswami</h2>
+                            <p>Team Lead</p>
+                            <img alt="Satya Sreekar Pattaswami" src="sreekar.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shahazaad-ahmed-b84147227/" target=_blank" class="profile">
+                            <h2 class="profile__name">Md Shahazaad Ahmed</h2>
+                            <p>Styling</p>
+                            <img alt="Md Shahazaad Ahmed" src="shahazaad.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/laasya-kruthi-97478526a/" target=_blank" class="profile">
+                            <h2 class="profile__name">Laasya Kruthi Jiguru</h2>
+                            <p>Database Management</p>
+                            <img alt=">Laasya Kruthi J" src="laasya.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/nitya-kollu" target=_blank" class="profile">
+                            <h2 class="profile__name">Sree Nitya Kollu</h2>
+                            <p>Tester</p>
+                            <img alt="Nitya Kollu" src="nitya.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank class="profile">
+                            <h2 class="profile__name">Nithin Reddy Gummakonda</h2>
+                            <p>Documentation</p>
+                            <img alt="Nithin Reddy" src="nithin.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swop.l" target=_blank" class="profile">
+                            <h2 class="profile__name">Dr.G Rekha </h2>
+                            <p>Faculty Co-ordinator</p>
+                            <img alt="Dr. G Rekha" src="Rekha.jpg" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>

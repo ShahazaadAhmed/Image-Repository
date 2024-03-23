@@ -1,0 +1,16 @@
+[29-Nov-2023 01:51:07 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/user/upro.php on line 10
+[29-Nov-2023 01:51:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/user/upro.php:10
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/user/upro.php on line 10
+[29-Nov-2023 01:52:21 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/user/imup.php on line 3
+[29-Nov-2023 01:52:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/user/imup.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/user/imup.php on line 3
+[29-Nov-2023 01:53:03 UTC] PHP Parse error:  syntax error, unexpected token "." in /cpanel_data/ictilhantec/public_html/OPDIRS/user/imup.php on line 3
+[29-Nov-2023 01:54:42 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/user/upload.php on line 8
+[29-Nov-2023 01:54:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/user/upload.php:8
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/user/upload.php on line 8

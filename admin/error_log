@@ -1,0 +1,15 @@
+[29-Nov-2023 09:00:45 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/AdminDisplay.php on line 7
+[29-Nov-2023 09:00:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/AdminDisplay.php:7
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/AdminDisplay.php on line 7
+[29-Nov-2023 21:45:44 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/gallery.php on line 3
+[29-Nov-2023 21:45:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/gallery.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/gallery.php on line 3
+[29-Nov-2023 21:51:48 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/downloadsel.php on line 3
+[29-Nov-2023 21:51:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/downloadsel.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/downloadsel.php on line 3

@@ -1,0 +1,80 @@
+[29-Nov-2023 06:19:57 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/manipulatedata.php on line 3
+[29-Nov-2023 06:19:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/manipulatedata.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/manipulatedata.php on line 3
+[29-Nov-2023 06:20:52 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/manipulatedata.php on line 3
+[29-Nov-2023 06:20:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/manipulatedata.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/manipulatedata.php on line 3
+[29-Nov-2023 06:23:35 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php on line 7
+[29-Nov-2023 06:23:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php:7
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php on line 7
+[29-Nov-2023 06:26:44 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php on line 7
+[29-Nov-2023 06:26:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php:7
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php on line 7
+[29-Nov-2023 06:27:33 UTC] PHP Warning:  require(../DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php on line 7
+[29-Nov-2023 06:27:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php:7
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/add.php on line 7
+[29-Nov-2023 06:28:55 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php on line 10
+[29-Nov-2023 06:28:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php:10
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php on line 10
+[29-Nov-2023 06:29:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'Id' doesn't have a default value in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php:32
+Stack trace:
+#0 /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php(32): mysqli->query('INSERT INTO  ca...')
+#1 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php on line 32
+[29-Nov-2023 06:30:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'Id' doesn't have a default value in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php:32
+Stack trace:
+#0 /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php(32): mysqli->query('INSERT INTO  ca...')
+#1 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php on line 32
+[29-Nov-2023 06:30:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'Id' doesn't have a default value in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php:32
+Stack trace:
+#0 /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php(32): mysqli->query('INSERT INTO  ca...')
+#1 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php on line 32
+[29-Nov-2023 06:31:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'Id' doesn't have a default value in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php:32
+Stack trace:
+#0 /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php(32): mysqli->query('INSERT INTO  ca...')
+#1 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php on line 32
+[29-Nov-2023 07:04:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'Id' doesn't have a default value in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php:32
+Stack trace:
+#0 /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php(32): mysqli->query('INSERT INTO  su...')
+#1 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/submit.php on line 32
+[29-Nov-2023 07:05:24 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/addcrop.php on line 3
+[29-Nov-2023 07:05:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/addcrop.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/addcrop.php on line 3
+[29-Nov-2023 19:56:18 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/addcrop.php on line 3
+[29-Nov-2023 19:56:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/addcrop.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/addcrop.php on line 3
+[29-Nov-2023 20:33:33 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/viewcrop.php on line 3
+[29-Nov-2023 20:33:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/viewcrop.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/viewcrop.php on line 3
+[29-Nov-2023 20:35:16 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/finishdeletion.php on line 9
+[29-Nov-2023 20:35:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/finishdeletion.php:9
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/finishdeletion.php on line 9
+[29-Nov-2023 21:05:46 UTC] PHP Warning:  require(DBinfo.php): Failed to open stream: No such file or directory in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/viewcrop.php on line 3
+[29-Nov-2023 21:05:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'DBinfo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/viewcrop.php:3
+Stack trace:
+#0 {main}
+  thrown in /cpanel_data/ictilhantec/public_html/OPDIRS/admin/crops/viewcrop.php on line 3
